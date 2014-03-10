@@ -10,49 +10,68 @@
 		AE95E94418CE330C005D9A83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95E94318CE330C005D9A83 /* Foundation.framework */; };
 		AE95E94618CE330C005D9A83 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95E94518CE330C005D9A83 /* CoreGraphics.framework */; };
 		AE95E94818CE330C005D9A83 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95E94718CE330C005D9A83 /* UIKit.framework */; };
-		AE95E94E18CE330C005D9A83 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE95E94C18CE330C005D9A83 /* InfoPlist.strings */; };
-		AE95E95018CE330C005D9A83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95E94F18CE330C005D9A83 /* main.m */; };
-		AE95E95418CE330C005D9A83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95E95318CE330C005D9A83 /* AppDelegate.m */; };
-		AE95E95718CE330C005D9A83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE95E95518CE330C005D9A83 /* Main.storyboard */; };
-		AE95E95A18CE330C005D9A83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95E95918CE330C005D9A83 /* ViewController.m */; };
-		AE95E95C18CE330C005D9A83 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE95E95B18CE330C005D9A83 /* Images.xcassets */; };
-		AE95E96318CE330C005D9A83 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95E96218CE330C005D9A83 /* XCTest.framework */; };
-		AE95E96418CE330D005D9A83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95E94318CE330C005D9A83 /* Foundation.framework */; };
-		AE95E96518CE330D005D9A83 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95E94718CE330C005D9A83 /* UIKit.framework */; };
-		AE95E96D18CE330D005D9A83 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE95E96B18CE330D005D9A83 /* InfoPlist.strings */; };
-		AE95E96F18CE330D005D9A83 /* BiteSizedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95E96E18CE330D005D9A83 /* BiteSizedTests.m */; };
+		AE95E97C18CE36E7005D9A83 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AE95E97918CE36E7005D9A83 /* .gitkeep */; };
+		AE95E97D18CE36E7005D9A83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95E97B18CE36E7005D9A83 /* ViewController.m */; };
+		AE95E98418CE3773005D9A83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95E97F18CE3773005D9A83 /* AppDelegate.m */; };
+		AE95E98518CE3773005D9A83 /* BiteSized-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE95E98018CE3773005D9A83 /* BiteSized-Info.plist */; };
+		AE95E98618CE3773005D9A83 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE95E98218CE3773005D9A83 /* InfoPlist.strings */; };
+		AE95E98718CE3773005D9A83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95E98318CE3773005D9A83 /* main.m */; };
+		AE95E99318CE3828005D9A83 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AE95E98A18CE3828005D9A83 /* .gitkeep */; };
+		AE95E99418CE3828005D9A83 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AE95E98C18CE3828005D9A83 /* .gitkeep */; };
+		AE95E99518CE3828005D9A83 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AE95E98E18CE3828005D9A83 /* .gitkeep */; };
+		AE95E99618CE3828005D9A83 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AE95E99018CE3828005D9A83 /* .gitkeep */; };
+		AE95E99718CE3828005D9A83 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AE95E99218CE3828005D9A83 /* .gitkeep */; };
+		AE95E99918CE3884005D9A83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE95E99818CE3884005D9A83 /* Main.storyboard */; };
+		AE95E99F18CE3948005D9A83 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95E94718CE330C005D9A83 /* UIKit.framework */; };
+		AE95E9A018CE3948005D9A83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95E94318CE330C005D9A83 /* Foundation.framework */; };
+		AE95E9A118CE3948005D9A83 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95E94518CE330C005D9A83 /* CoreGraphics.framework */; };
+		AE95E9AF18CE3949005D9A83 /* ExampleSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE95E9AE18CE3949005D9A83 /* ExampleSpec.mm */; };
+		AE95E9C118CE39BD005D9A83 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AE95E9B418CE39BD005D9A83 /* .gitkeep */; };
+		AE95E9C218CE39BD005D9A83 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AE95E9B618CE39BD005D9A83 /* .gitkeep */; };
+		AE95E9C318CE39BD005D9A83 /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95E9B818CE39BD005D9A83 /* Cedar-iOS.framework */; };
+		AE95E9C418CE39BD005D9A83 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AE95E9BA18CE39BD005D9A83 /* .gitkeep */; };
+		AE95E9C518CE39BD005D9A83 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AE95E9BC18CE39BD005D9A83 /* .gitkeep */; };
+		AE95E9C618CE39BD005D9A83 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AE95E9BE18CE39BD005D9A83 /* .gitkeep */; };
+		AE95E9C718CE39BD005D9A83 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AE95E9C018CE39BD005D9A83 /* .gitkeep */; };
+		AE95E9CC18CE39F7005D9A83 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE95E9C818CE39F7005D9A83 /* InfoPlist.strings */; };
+		AE95E9CD18CE39F7005D9A83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95E9C918CE39F7005D9A83 /* main.m */; };
+		AE95E9CE18CE39F7005D9A83 /* Specs-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE95E9CA18CE39F7005D9A83 /* Specs-Info.plist */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		AE95E96618CE330D005D9A83 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AE95E93818CE330C005D9A83 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AE95E93F18CE330C005D9A83;
-			remoteInfo = BiteSized;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AE95E94018CE330C005D9A83 /* BiteSized.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiteSized.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE95E94318CE330C005D9A83 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AE95E94518CE330C005D9A83 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		AE95E94718CE330C005D9A83 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		AE95E94B18CE330C005D9A83 /* BiteSized-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BiteSized-Info.plist"; sourceTree = "<group>"; };
-		AE95E94D18CE330C005D9A83 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AE95E94F18CE330C005D9A83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AE95E95118CE330C005D9A83 /* BiteSized-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BiteSized-Prefix.pch"; sourceTree = "<group>"; };
-		AE95E95218CE330C005D9A83 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		AE95E95318CE330C005D9A83 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AE95E95618CE330C005D9A83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AE95E95818CE330C005D9A83 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AE95E95918CE330C005D9A83 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		AE95E95B18CE330C005D9A83 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		AE95E96118CE330C005D9A83 /* BiteSizedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiteSizedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE95E96218CE330C005D9A83 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		AE95E96A18CE330D005D9A83 /* BiteSizedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BiteSizedTests-Info.plist"; sourceTree = "<group>"; };
-		AE95E96C18CE330D005D9A83 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AE95E96E18CE330D005D9A83 /* BiteSizedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BiteSizedTests.m; sourceTree = "<group>"; };
+		AE95E97918CE36E7005D9A83 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		AE95E97A18CE36E7005D9A83 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AE95E97B18CE36E7005D9A83 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AE95E97E18CE3773005D9A83 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "Supporting Files/AppDelegate.h"; sourceTree = "<group>"; };
+		AE95E97F18CE3773005D9A83 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "Supporting Files/AppDelegate.m"; sourceTree = "<group>"; };
+		AE95E98018CE3773005D9A83 /* BiteSized-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "BiteSized-Info.plist"; path = "Supporting Files/BiteSized-Info.plist"; sourceTree = "<group>"; };
+		AE95E98118CE3773005D9A83 /* BiteSized-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BiteSized-Prefix.pch"; path = "Supporting Files/BiteSized-Prefix.pch"; sourceTree = "<group>"; };
+		AE95E98218CE3773005D9A83 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = "Supporting Files/InfoPlist.strings"; sourceTree = "<group>"; };
+		AE95E98318CE3773005D9A83 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Supporting Files/main.m"; sourceTree = "<group>"; };
+		AE95E98A18CE3828005D9A83 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		AE95E98C18CE3828005D9A83 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		AE95E98E18CE3828005D9A83 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		AE95E99018CE3828005D9A83 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		AE95E99218CE3828005D9A83 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		AE95E99818CE3884005D9A83 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AE95E99E18CE3948005D9A83 /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE95E9AB18CE3948005D9A83 /* Rakefile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
+		AE95E9AE18CE3949005D9A83 /* ExampleSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleSpec.mm; sourceTree = "<group>"; };
+		AE95E9B418CE39BD005D9A83 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		AE95E9B618CE39BD005D9A83 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		AE95E9B818CE39BD005D9A83 /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Cedar-iOS.framework"; sourceTree = "<group>"; };
+		AE95E9BA18CE39BD005D9A83 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		AE95E9BC18CE39BD005D9A83 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		AE95E9BE18CE39BD005D9A83 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		AE95E9C018CE39BD005D9A83 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		AE95E9C818CE39F7005D9A83 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		AE95E9C918CE39F7005D9A83 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE95E9CA18CE39F7005D9A83 /* Specs-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
+		AE95E9CB18CE39F7005D9A83 /* Specs-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +85,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AE95E95E18CE330C005D9A83 /* Frameworks */ = {
+		AE95E99B18CE3948005D9A83 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE95E96318CE330C005D9A83 /* XCTest.framework in Frameworks */,
-				AE95E96518CE330D005D9A83 /* UIKit.framework in Frameworks */,
-				AE95E96418CE330D005D9A83 /* Foundation.framework in Frameworks */,
+				AE95E9A118CE3948005D9A83 /* CoreGraphics.framework in Frameworks */,
+				AE95E99F18CE3948005D9A83 /* UIKit.framework in Frameworks */,
+				AE95E9C318CE39BD005D9A83 /* Cedar-iOS.framework in Frameworks */,
+				AE95E9A018CE3948005D9A83 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,8 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				AE95E94918CE330C005D9A83 /* BiteSized */,
-				AE95E96818CE330D005D9A83 /* BiteSizedTests */,
-				AE95E94218CE330C005D9A83 /* Frameworks */,
+				AE95E9A218CE3948005D9A83 /* Specs */,
+				AE95E94218CE330C005D9A83 /* Externals */,
 				AE95E94118CE330C005D9A83 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,32 +113,31 @@
 			isa = PBXGroup;
 			children = (
 				AE95E94018CE330C005D9A83 /* BiteSized.app */,
-				AE95E96118CE330C005D9A83 /* BiteSizedTests.xctest */,
+				AE95E99E18CE3948005D9A83 /* Specs.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AE95E94218CE330C005D9A83 /* Frameworks */ = {
+		AE95E94218CE330C005D9A83 /* Externals */ = {
 			isa = PBXGroup;
 			children = (
 				AE95E94318CE330C005D9A83 /* Foundation.framework */,
 				AE95E94518CE330C005D9A83 /* CoreGraphics.framework */,
 				AE95E94718CE330C005D9A83 /* UIKit.framework */,
-				AE95E96218CE330C005D9A83 /* XCTest.framework */,
 			);
-			name = Frameworks;
+			name = Externals;
 			sourceTree = "<group>";
 		};
 		AE95E94918CE330C005D9A83 /* BiteSized */ = {
 			isa = PBXGroup;
 			children = (
-				AE95E95218CE330C005D9A83 /* AppDelegate.h */,
-				AE95E95318CE330C005D9A83 /* AppDelegate.m */,
-				AE95E95518CE330C005D9A83 /* Main.storyboard */,
-				AE95E95818CE330C005D9A83 /* ViewController.h */,
-				AE95E95918CE330C005D9A83 /* ViewController.m */,
-				AE95E95B18CE330C005D9A83 /* Images.xcassets */,
+				AE95E97818CE36E7005D9A83 /* Controllers */,
+				AE95E98918CE3828005D9A83 /* Extensions */,
+				AE95E98B18CE3828005D9A83 /* Interfaces */,
+				AE95E98D18CE3828005D9A83 /* Models */,
+				AE95E98F18CE3828005D9A83 /* Resources */,
 				AE95E94A18CE330C005D9A83 /* Supporting Files */,
+				AE95E99118CE3828005D9A83 /* Views */,
 			);
 			path = BiteSized;
 			sourceTree = "<group>";
@@ -126,30 +145,142 @@
 		AE95E94A18CE330C005D9A83 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AE95E94B18CE330C005D9A83 /* BiteSized-Info.plist */,
-				AE95E94C18CE330C005D9A83 /* InfoPlist.strings */,
-				AE95E94F18CE330C005D9A83 /* main.m */,
-				AE95E95118CE330C005D9A83 /* BiteSized-Prefix.pch */,
+				AE95E97E18CE3773005D9A83 /* AppDelegate.h */,
+				AE95E97F18CE3773005D9A83 /* AppDelegate.m */,
+				AE95E98018CE3773005D9A83 /* BiteSized-Info.plist */,
+				AE95E98118CE3773005D9A83 /* BiteSized-Prefix.pch */,
+				AE95E98218CE3773005D9A83 /* InfoPlist.strings */,
+				AE95E98318CE3773005D9A83 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		AE95E96818CE330D005D9A83 /* BiteSizedTests */ = {
+		AE95E97818CE36E7005D9A83 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE95E96E18CE330D005D9A83 /* BiteSizedTests.m */,
-				AE95E96918CE330D005D9A83 /* Supporting Files */,
+				AE95E97918CE36E7005D9A83 /* .gitkeep */,
+				AE95E97A18CE36E7005D9A83 /* ViewController.h */,
+				AE95E97B18CE36E7005D9A83 /* ViewController.m */,
 			);
-			path = BiteSizedTests;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		AE95E96918CE330D005D9A83 /* Supporting Files */ = {
+		AE95E98918CE3828005D9A83 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				AE95E96A18CE330D005D9A83 /* BiteSizedTests-Info.plist */,
-				AE95E96B18CE330D005D9A83 /* InfoPlist.strings */,
+				AE95E98A18CE3828005D9A83 /* .gitkeep */,
 			);
-			name = "Supporting Files";
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AE95E98B18CE3828005D9A83 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				AE95E98C18CE3828005D9A83 /* .gitkeep */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		AE95E98D18CE3828005D9A83 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE95E98E18CE3828005D9A83 /* .gitkeep */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE95E98F18CE3828005D9A83 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AE95E99018CE3828005D9A83 /* .gitkeep */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AE95E99118CE3828005D9A83 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AE95E99818CE3884005D9A83 /* Main.storyboard */,
+				AE95E99218CE3828005D9A83 /* .gitkeep */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE95E9A218CE3948005D9A83 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				AE95E9B318CE39BD005D9A83 /* Controllers */,
+				AE95E9B518CE39BD005D9A83 /* Extensions */,
+				AE95E9B718CE39BD005D9A83 /* Externals */,
+				AE95E9B918CE39BD005D9A83 /* Interfaces */,
+				AE95E9BB18CE39BD005D9A83 /* Models */,
+				AE95E9BD18CE39BD005D9A83 /* Supporting Files */,
+				AE95E9BF18CE39BD005D9A83 /* Views */,
+				AE95E9AB18CE3948005D9A83 /* Rakefile */,
+				AE95E9AE18CE3949005D9A83 /* ExampleSpec.mm */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		AE95E9B318CE39BD005D9A83 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE95E9B418CE39BD005D9A83 /* .gitkeep */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AE95E9B518CE39BD005D9A83 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AE95E9B618CE39BD005D9A83 /* .gitkeep */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AE95E9B718CE39BD005D9A83 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				AE95E9B818CE39BD005D9A83 /* Cedar-iOS.framework */,
+			);
+			name = Externals;
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE95E9B918CE39BD005D9A83 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				AE95E9BA18CE39BD005D9A83 /* .gitkeep */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		AE95E9BB18CE39BD005D9A83 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE95E9BC18CE39BD005D9A83 /* .gitkeep */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE95E9BD18CE39BD005D9A83 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE95E9C818CE39F7005D9A83 /* InfoPlist.strings */,
+				AE95E9C918CE39F7005D9A83 /* main.m */,
+				AE95E9CA18CE39F7005D9A83 /* Specs-Info.plist */,
+				AE95E9CB18CE39F7005D9A83 /* Specs-Prefix.pch */,
+				AE95E9BE18CE39BD005D9A83 /* .gitkeep */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE95E9BF18CE39BD005D9A83 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AE95E9C018CE39BD005D9A83 /* .gitkeep */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,23 +303,22 @@
 			productReference = AE95E94018CE330C005D9A83 /* BiteSized.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AE95E96018CE330C005D9A83 /* BiteSizedTests */ = {
+		AE95E99D18CE3948005D9A83 /* Specs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AE95E97518CE330D005D9A83 /* Build configuration list for PBXNativeTarget "BiteSizedTests" */;
+			buildConfigurationList = AE95E9B018CE3949005D9A83 /* Build configuration list for PBXNativeTarget "Specs" */;
 			buildPhases = (
-				AE95E95D18CE330C005D9A83 /* Sources */,
-				AE95E95E18CE330C005D9A83 /* Frameworks */,
-				AE95E95F18CE330C005D9A83 /* Resources */,
+				AE95E99A18CE3948005D9A83 /* Sources */,
+				AE95E99B18CE3948005D9A83 /* Frameworks */,
+				AE95E99C18CE3948005D9A83 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AE95E96718CE330D005D9A83 /* PBXTargetDependency */,
 			);
-			name = BiteSizedTests;
-			productName = BiteSizedTests;
-			productReference = AE95E96118CE330C005D9A83 /* BiteSizedTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = Specs;
+			productName = Specs;
+			productReference = AE95E99E18CE3948005D9A83 /* Specs.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -198,11 +328,6 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = pivotal;
-				TargetAttributes = {
-					AE95E96018CE330C005D9A83 = {
-						TestTargetID = AE95E93F18CE330C005D9A83;
-					};
-				};
 			};
 			buildConfigurationList = AE95E93B18CE330C005D9A83 /* Build configuration list for PBXProject "BiteSized" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -218,7 +343,7 @@
 			projectRoot = "";
 			targets = (
 				AE95E93F18CE330C005D9A83 /* BiteSized */,
-				AE95E96018CE330C005D9A83 /* BiteSizedTests */,
+				AE95E99D18CE3948005D9A83 /* Specs */,
 			);
 		};
 /* End PBXProject section */
@@ -228,17 +353,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE95E95C18CE330C005D9A83 /* Images.xcassets in Resources */,
-				AE95E94E18CE330C005D9A83 /* InfoPlist.strings in Resources */,
-				AE95E95718CE330C005D9A83 /* Main.storyboard in Resources */,
+				AE95E99918CE3884005D9A83 /* Main.storyboard in Resources */,
+				AE95E98518CE3773005D9A83 /* BiteSized-Info.plist in Resources */,
+				AE95E99618CE3828005D9A83 /* .gitkeep in Resources */,
+				AE95E99318CE3828005D9A83 /* .gitkeep in Resources */,
+				AE95E97C18CE36E7005D9A83 /* .gitkeep in Resources */,
+				AE95E98618CE3773005D9A83 /* InfoPlist.strings in Resources */,
+				AE95E99718CE3828005D9A83 /* .gitkeep in Resources */,
+				AE95E99418CE3828005D9A83 /* .gitkeep in Resources */,
+				AE95E99518CE3828005D9A83 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AE95E95F18CE330C005D9A83 /* Resources */ = {
+		AE95E99C18CE3948005D9A83 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE95E96D18CE330D005D9A83 /* InfoPlist.strings in Resources */,
+				AE95E9C218CE39BD005D9A83 /* .gitkeep in Resources */,
+				AE95E9CE18CE39F7005D9A83 /* Specs-Info.plist in Resources */,
+				AE95E9CC18CE39F7005D9A83 /* InfoPlist.strings in Resources */,
+				AE95E9C518CE39BD005D9A83 /* .gitkeep in Resources */,
+				AE95E9C618CE39BD005D9A83 /* .gitkeep in Resources */,
+				AE95E9C118CE39BD005D9A83 /* .gitkeep in Resources */,
+				AE95E9C418CE39BD005D9A83 /* .gitkeep in Resources */,
+				AE95E9C718CE39BD005D9A83 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,56 +387,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE95E95A18CE330C005D9A83 /* ViewController.m in Sources */,
-				AE95E95418CE330C005D9A83 /* AppDelegate.m in Sources */,
-				AE95E95018CE330C005D9A83 /* main.m in Sources */,
+				AE95E98418CE3773005D9A83 /* AppDelegate.m in Sources */,
+				AE95E98718CE3773005D9A83 /* main.m in Sources */,
+				AE95E97D18CE36E7005D9A83 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AE95E95D18CE330C005D9A83 /* Sources */ = {
+		AE95E99A18CE3948005D9A83 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE95E96F18CE330D005D9A83 /* BiteSizedTests.m in Sources */,
+				AE95E9CD18CE39F7005D9A83 /* main.m in Sources */,
+				AE95E9AF18CE3949005D9A83 /* ExampleSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AE95E96718CE330D005D9A83 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AE95E93F18CE330C005D9A83 /* BiteSized */;
-			targetProxy = AE95E96618CE330D005D9A83 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		AE95E94C18CE330C005D9A83 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AE95E94D18CE330C005D9A83 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		AE95E95518CE330C005D9A83 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AE95E95618CE330C005D9A83 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AE95E96B18CE330D005D9A83 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AE95E96C18CE330D005D9A83 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AE95E97018CE330D005D9A83 /* Debug */ = {
@@ -379,8 +483,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BiteSized/BiteSized-Prefix.pch";
-				INFOPLIST_FILE = "BiteSized/BiteSized-Info.plist";
+				GCC_PREFIX_HEADER = "BiteSized/Supporting Files/BiteSized-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/BiteSized/Supporting Files/BiteSized-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -392,52 +496,59 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BiteSized/BiteSized-Prefix.pch";
-				INFOPLIST_FILE = "BiteSized/BiteSized-Info.plist";
+				GCC_PREFIX_HEADER = "BiteSized/Supporting Files/BiteSized-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/BiteSized/Supporting Files/BiteSized-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		AE95E97618CE330D005D9A83 /* Debug */ = {
+		AE95E9B118CE3949005D9A83 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BiteSized.app/BiteSized";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					/Users/pivotal/workspace/bite_sized/ios/Specs/Frameworks,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BiteSized/BiteSized-Prefix.pch";
+				GCC_PREFIX_HEADER = "Specs/Supporting Files/Specs-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "BiteSizedTests/BiteSizedTests-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Specs/Supporting Files/Specs-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		AE95E97718CE330D005D9A83 /* Release */ = {
+		AE95E9B218CE3949005D9A83 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BiteSized.app/BiteSized";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					/Users/pivotal/workspace/bite_sized/ios/Specs/Frameworks,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BiteSized/BiteSized-Prefix.pch";
-				INFOPLIST_FILE = "BiteSizedTests/BiteSizedTests-Info.plist";
+				GCC_PREFIX_HEADER = "Specs/Supporting Files/Specs-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Specs/Supporting Files/Specs-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
@@ -460,12 +571,13 @@
 				AE95E97418CE330D005D9A83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		AE95E97518CE330D005D9A83 /* Build configuration list for PBXNativeTarget "BiteSizedTests" */ = {
+		AE95E9B018CE3949005D9A83 /* Build configuration list for PBXNativeTarget "Specs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AE95E97618CE330D005D9A83 /* Debug */,
-				AE95E97718CE330D005D9A83 /* Release */,
+				AE95E9B118CE3949005D9A83 /* Debug */,
+				AE95E9B218CE3949005D9A83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
