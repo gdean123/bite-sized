@@ -22,6 +22,10 @@ describe(@"AppDelegate", ^{
     it(@"sets the root view controller", ^{
         appDelegate.window.rootViewController should equal(browseViewController);
     });
+
+    it(@"sets the key window", ^{
+        [[UIApplication sharedApplication] keyWindow] should equal(appDelegate.window);
+    });
 });
 
 SPEC_END

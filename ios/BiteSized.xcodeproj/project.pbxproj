@@ -41,6 +41,9 @@
 		AE95EF0A18CE7A06005D9A83 /* libDeferred.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95EEDB18CE79AC005D9A83 /* libDeferred.a */; };
 		AE95EF1918CE93FA005D9A83 /* AppDelegateSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE95EF1818CE93FA005D9A83 /* AppDelegateSpec.mm */; };
 		AEB3BA3718CF824E00426872 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95E97F18CE3773005D9A83 /* AppDelegate.m */; };
+		AEB3BA3B18CF90D500426872 /* RealExperienceRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB3BA3A18CF90D500426872 /* RealExperienceRepository.m */; };
+		AEB3BA3C18CF90D500426872 /* RealExperienceRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB3BA3A18CF90D500426872 /* RealExperienceRepository.m */; };
+		AEB3BA3F18CF9A8100426872 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE95E9E718CE623A005D9A83 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -195,6 +198,8 @@
 		AE95EED318CE79AC005D9A83 /* Deferred.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Deferred.xcodeproj; path = Externals/deferred/Deferred.xcodeproj; sourceTree = "<group>"; };
 		AE95EEE018CE79BC005D9A83 /* Cedar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cedar.xcodeproj; path = Externals/cedar/Cedar.xcodeproj; sourceTree = "<group>"; };
 		AE95EF1818CE93FA005D9A83 /* AppDelegateSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegateSpec.mm; sourceTree = "<group>"; };
+		AEB3BA3918CF90D500426872 /* RealExperienceRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RealExperienceRepository.h; path = Repositories/RealExperienceRepository.h; sourceTree = "<group>"; };
+		AEB3BA3A18CF90D500426872 /* RealExperienceRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RealExperienceRepository.m; path = Repositories/RealExperienceRepository.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +268,7 @@
 				AE95E98918CE3828005D9A83 /* Extensions */,
 				AE95E98B18CE3828005D9A83 /* Interfaces */,
 				AE95E98D18CE3828005D9A83 /* Models */,
+				AEB3BA3818CF902700426872 /* Repositories */,
 				AE95E98F18CE3828005D9A83 /* Resources */,
 				AE95E94A18CE330C005D9A83 /* Supporting Files */,
 				AE95E99118CE3828005D9A83 /* Views */,
@@ -336,9 +342,9 @@
 		AE95E9A218CE3948005D9A83 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				AEB3BA4018CFAEBA00426872 /* Repositories */,
 				AE95E9B318CE39BD005D9A83 /* Controllers */,
 				AE95E9B518CE39BD005D9A83 /* Extensions */,
-				AE95E9B718CE39BD005D9A83 /* Externals */,
 				AE95E9DC18CE4529005D9A83 /* Fakes */,
 				AE95E9B918CE39BD005D9A83 /* Interfaces */,
 				AE95E9BB18CE39BD005D9A83 /* Models */,
@@ -364,14 +370,6 @@
 				AE95E9B618CE39BD005D9A83 /* .gitkeep */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		AE95E9B718CE39BD005D9A83 /* Externals */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Externals;
-			path = Frameworks;
 			sourceTree = "<group>";
 		};
 		AE95E9B918CE39BD005D9A83 /* Interfaces */ = {
@@ -452,6 +450,22 @@
 				AE95EF0118CE79BD005D9A83 /* OCUnitAppLogicTests.octest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AEB3BA3818CF902700426872 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				AEB3BA3918CF90D500426872 /* RealExperienceRepository.h */,
+				AEB3BA3A18CF90D500426872 /* RealExperienceRepository.m */,
+			);
+			name = Repositories;
+			sourceTree = "<group>";
+		};
+		AEB3BA4018CFAEBA00426872 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -637,6 +651,7 @@
 				AE95E99318CE3828005D9A83 /* .gitkeep in Resources */,
 				AE95E98618CE3773005D9A83 /* InfoPlist.strings in Resources */,
 				AE95E9DA18CE44E5005D9A83 /* BrowseViewController.xib in Resources */,
+				AEB3BA3F18CF9A8100426872 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -661,6 +676,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEB3BA3B18CF90D500426872 /* RealExperienceRepository.m in Sources */,
 				AE95E9E218CE4599005D9A83 /* Experience.m in Sources */,
 				AE95E98418CE3773005D9A83 /* AppDelegate.m in Sources */,
 				AE95E98718CE3773005D9A83 /* main.m in Sources */,
@@ -677,6 +693,7 @@
 				AEB3BA3718CF824E00426872 /* AppDelegate.m in Sources */,
 				AE95E9E318CE4599005D9A83 /* Experience.m in Sources */,
 				AE95E9CD18CE39F7005D9A83 /* main.m in Sources */,
+				AEB3BA3C18CF90D500426872 /* RealExperienceRepository.m in Sources */,
 				AE95E9E518CE4625005D9A83 /* ExperienceSpec.mm in Sources */,
 				AE95E9AF18CE3949005D9A83 /* ExampleSpec.mm in Sources */,
 				AE95E9D518CE43DE005D9A83 /* BrowseViewController.m in Sources */,
@@ -781,7 +798,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BiteSized/Supporting Files/BiteSized-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -799,7 +815,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BiteSized/Supporting Files/BiteSized-Prefix.pch";
 				HEADER_SEARCH_PATHS = (

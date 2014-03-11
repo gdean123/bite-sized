@@ -1,5 +1,6 @@
 #import "AppDelegate.h"
 #import "BrowseViewController.h"
+#import "RealExperienceRepository.h"
 
 @interface AppDelegate ()
 
@@ -8,6 +9,13 @@
 @end
 
 @implementation AppDelegate
+
+- (id)init {
+    RealExperienceRepository *experienceRepository = [[RealExperienceRepository alloc] init];
+    BrowseViewController *browseViewController = [[BrowseViewController alloc] initWithRepository:experienceRepository];
+
+    return [self initWithBrowseViewController:browseViewController];
+}
 
 - (id)initWithBrowseViewController:(BrowseViewController *)browseViewController {
     self = [super init];
@@ -21,6 +29,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = self.browseViewController;
+    [self.window makeKeyAndVisible];
 
     return YES;
 }
