@@ -10,42 +10,157 @@
 		AE95E94418CE330C005D9A83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95E94318CE330C005D9A83 /* Foundation.framework */; };
 		AE95E94618CE330C005D9A83 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95E94518CE330C005D9A83 /* CoreGraphics.framework */; };
 		AE95E94818CE330C005D9A83 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95E94718CE330C005D9A83 /* UIKit.framework */; };
-		AE95E97C18CE36E7005D9A83 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AE95E97918CE36E7005D9A83 /* .gitkeep */; };
-		AE95E97D18CE36E7005D9A83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95E97B18CE36E7005D9A83 /* ViewController.m */; };
 		AE95E98418CE3773005D9A83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95E97F18CE3773005D9A83 /* AppDelegate.m */; };
 		AE95E98518CE3773005D9A83 /* BiteSized-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE95E98018CE3773005D9A83 /* BiteSized-Info.plist */; };
 		AE95E98618CE3773005D9A83 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE95E98218CE3773005D9A83 /* InfoPlist.strings */; };
 		AE95E98718CE3773005D9A83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95E98318CE3773005D9A83 /* main.m */; };
 		AE95E99318CE3828005D9A83 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AE95E98A18CE3828005D9A83 /* .gitkeep */; };
-		AE95E99418CE3828005D9A83 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AE95E98C18CE3828005D9A83 /* .gitkeep */; };
-		AE95E99518CE3828005D9A83 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AE95E98E18CE3828005D9A83 /* .gitkeep */; };
 		AE95E99618CE3828005D9A83 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AE95E99018CE3828005D9A83 /* .gitkeep */; };
-		AE95E99718CE3828005D9A83 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AE95E99218CE3828005D9A83 /* .gitkeep */; };
-		AE95E99918CE3884005D9A83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE95E99818CE3884005D9A83 /* Main.storyboard */; };
 		AE95E99F18CE3948005D9A83 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95E94718CE330C005D9A83 /* UIKit.framework */; };
 		AE95E9A018CE3948005D9A83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95E94318CE330C005D9A83 /* Foundation.framework */; };
 		AE95E9A118CE3948005D9A83 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95E94518CE330C005D9A83 /* CoreGraphics.framework */; };
-		AE95E9AF18CE3949005D9A83 /* ExampleSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE95E9AE18CE3949005D9A83 /* ExampleSpec.mm */; };
-		AE95E9C118CE39BD005D9A83 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AE95E9B418CE39BD005D9A83 /* .gitkeep */; };
+		AE95E9AF18CE3949005D9A83 /* ExampleSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE95E9AE18CE3949005D9A83 /* ExampleSpec.mm */; settings = {COMPILER_FLAGS = "-fo-objc-arc"; }; };
 		AE95E9C218CE39BD005D9A83 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AE95E9B618CE39BD005D9A83 /* .gitkeep */; };
-		AE95E9C318CE39BD005D9A83 /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95E9B818CE39BD005D9A83 /* Cedar-iOS.framework */; };
 		AE95E9C418CE39BD005D9A83 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AE95E9BA18CE39BD005D9A83 /* .gitkeep */; };
-		AE95E9C518CE39BD005D9A83 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AE95E9BC18CE39BD005D9A83 /* .gitkeep */; };
-		AE95E9C618CE39BD005D9A83 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AE95E9BE18CE39BD005D9A83 /* .gitkeep */; };
 		AE95E9C718CE39BD005D9A83 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AE95E9C018CE39BD005D9A83 /* .gitkeep */; };
 		AE95E9CC18CE39F7005D9A83 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE95E9C818CE39F7005D9A83 /* InfoPlist.strings */; };
 		AE95E9CD18CE39F7005D9A83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95E9C918CE39F7005D9A83 /* main.m */; };
 		AE95E9CE18CE39F7005D9A83 /* Specs-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE95E9CA18CE39F7005D9A83 /* Specs-Info.plist */; };
+		AE95E9D018CE3E3B005D9A83 /* BrowseViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE95E9CF18CE3E3B005D9A83 /* BrowseViewControllerSpec.mm */; settings = {COMPILER_FLAGS = "-fo-objc-arc"; }; };
+		AE95E9D418CE43DE005D9A83 /* BrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95E9D218CE43DE005D9A83 /* BrowseViewController.m */; };
+		AE95E9D518CE43DE005D9A83 /* BrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95E9D218CE43DE005D9A83 /* BrowseViewController.m */; };
+		AE95E9DA18CE44E5005D9A83 /* BrowseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE95E9D918CE44E5005D9A83 /* BrowseViewController.xib */; };
+		AE95E9DB18CE44E5005D9A83 /* BrowseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE95E9D918CE44E5005D9A83 /* BrowseViewController.xib */; };
+		AE95E9DF18CE456B005D9A83 /* FakeExperienceRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95E9DE18CE456B005D9A83 /* FakeExperienceRepository.m */; };
+		AE95E9E218CE4599005D9A83 /* Experience.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95E9E118CE4599005D9A83 /* Experience.m */; };
+		AE95E9E318CE4599005D9A83 /* Experience.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95E9E118CE4599005D9A83 /* Experience.m */; };
+		AE95E9E518CE4625005D9A83 /* ExperienceSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE95E9E418CE4625005D9A83 /* ExperienceSpec.mm */; settings = {COMPILER_FLAGS = "-fo-objc-arc"; }; };
+		AE95E9E818CE623A005D9A83 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE95E9E718CE623A005D9A83 /* Default-568h@2x.png */; };
+		AE95EF0418CE79D3005D9A83 /* libCedar-StaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95EEF518CE79BD005D9A83 /* libCedar-StaticLib.a */; };
+		AE95EF0518CE79D6005D9A83 /* libDeferred.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95EEDB18CE79AC005D9A83 /* libDeferred.a */; };
+		AE95EF0A18CE7A06005D9A83 /* libDeferred.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95EEDB18CE79AC005D9A83 /* libDeferred.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE95EEDA18CE79AC005D9A83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE95EED318CE79AC005D9A83 /* Deferred.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E18A7B1515674D9B0083D745;
+			remoteInfo = Deferred;
+		};
+		AE95EEDC18CE79AC005D9A83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE95EED318CE79AC005D9A83 /* Deferred.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E18A7B3015674EC20083D745;
+			remoteInfo = "Deferred-OSX";
+		};
+		AE95EEDE18CE79AC005D9A83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE95EED318CE79AC005D9A83 /* Deferred.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E18A7B4415674ED10083D745;
+			remoteInfo = Specs;
+		};
+		AE95EEEE18CE79BD005D9A83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE95EEE018CE79BC005D9A83 /* Cedar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEEE1FB611DC271300029872;
+			remoteInfo = Cedar;
+		};
+		AE95EEF018CE79BD005D9A83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE95EEE018CE79BC005D9A83 /* Cedar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEEE218611DC28E200029872;
+			remoteInfo = Specs;
+		};
+		AE95EEF218CE79BD005D9A83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE95EEE018CE79BC005D9A83 /* Cedar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96A07F0813F276640021974D;
+			remoteInfo = FocusedSpecs;
+		};
+		AE95EEF418CE79BD005D9A83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE95EEE018CE79BC005D9A83 /* Cedar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEEE222911DC2B0600029872;
+			remoteInfo = "Cedar-StaticLib";
+		};
+		AE95EEF618CE79BD005D9A83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE95EEE018CE79BC005D9A83 /* Cedar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEEE227611DC2CF900029872;
+			remoteInfo = iOSSpecs;
+		};
+		AE95EEF818CE79BD005D9A83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE95EEE018CE79BC005D9A83 /* Cedar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AE02E7E4184EABCD00414F19;
+			remoteInfo = iOSFrameworkSpecs;
+		};
+		AE95EEFA18CE79BD005D9A83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE95EEE018CE79BC005D9A83 /* Cedar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96B5F9F6144A81A7000A6A5D;
+			remoteInfo = OCUnitApp;
+		};
+		AE95EEFC18CE79BD005D9A83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE95EEE018CE79BC005D9A83 /* Cedar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96B5FA11144A81A8000A6A5D;
+			remoteInfo = OCUnitAppTests;
+		};
+		AE95EEFE18CE79BD005D9A83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE95EEE018CE79BC005D9A83 /* Cedar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F45A3DD180E4796003C1E36;
+			remoteInfo = XCUnitAppTests;
+		};
+		AE95EF0018CE79BD005D9A83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE95EEE018CE79BC005D9A83 /* Cedar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96158A86144A915E005895CE;
+			remoteInfo = OCUnitAppLogicTests;
+		};
+		AE95EF0218CE79CF005D9A83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE95EEE018CE79BC005D9A83 /* Cedar.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = AEEE222811DC2B0600029872;
+			remoteInfo = "Cedar-StaticLib";
+		};
+		AE95EF0618CE79DB005D9A83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE95EED318CE79AC005D9A83 /* Deferred.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E18A7B1415674D9B0083D745;
+			remoteInfo = Deferred;
+		};
+		AE95EF0818CE79F6005D9A83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE95EED318CE79AC005D9A83 /* Deferred.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E18A7B1415674D9B0083D745;
+			remoteInfo = Deferred;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AE95E94018CE330C005D9A83 /* BiteSized.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiteSized.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE95E94318CE330C005D9A83 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AE95E94518CE330C005D9A83 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		AE95E94718CE330C005D9A83 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		AE95E97918CE36E7005D9A83 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		AE95E97A18CE36E7005D9A83 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AE95E97B18CE36E7005D9A83 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AE95E97E18CE3773005D9A83 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "Supporting Files/AppDelegate.h"; sourceTree = "<group>"; };
 		AE95E97F18CE3773005D9A83 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "Supporting Files/AppDelegate.m"; sourceTree = "<group>"; };
 		AE95E98018CE3773005D9A83 /* BiteSized-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "BiteSized-Info.plist"; path = "Supporting Files/BiteSized-Info.plist"; sourceTree = "<group>"; };
@@ -53,25 +168,30 @@
 		AE95E98218CE3773005D9A83 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = "Supporting Files/InfoPlist.strings"; sourceTree = "<group>"; };
 		AE95E98318CE3773005D9A83 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Supporting Files/main.m"; sourceTree = "<group>"; };
 		AE95E98A18CE3828005D9A83 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		AE95E98C18CE3828005D9A83 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		AE95E98E18CE3828005D9A83 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		AE95E99018CE3828005D9A83 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		AE95E99218CE3828005D9A83 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		AE95E99818CE3884005D9A83 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		AE95E99E18CE3948005D9A83 /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE95E9AB18CE3948005D9A83 /* Rakefile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
 		AE95E9AE18CE3949005D9A83 /* ExampleSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleSpec.mm; sourceTree = "<group>"; };
-		AE95E9B418CE39BD005D9A83 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		AE95E9B618CE39BD005D9A83 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		AE95E9B818CE39BD005D9A83 /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Cedar-iOS.framework"; sourceTree = "<group>"; };
 		AE95E9BA18CE39BD005D9A83 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		AE95E9BC18CE39BD005D9A83 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		AE95E9BE18CE39BD005D9A83 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		AE95E9C018CE39BD005D9A83 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		AE95E9C818CE39F7005D9A83 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		AE95E9C918CE39F7005D9A83 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE95E9CA18CE39F7005D9A83 /* Specs-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
 		AE95E9CB18CE39F7005D9A83 /* Specs-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
+		AE95E9CF18CE3E3B005D9A83 /* BrowseViewControllerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BrowseViewControllerSpec.mm; sourceTree = "<group>"; };
+		AE95E9D118CE43DE005D9A83 /* BrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseViewController.h; sourceTree = "<group>"; };
+		AE95E9D218CE43DE005D9A83 /* BrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseViewController.m; sourceTree = "<group>"; };
+		AE95E9D918CE44E5005D9A83 /* BrowseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BrowseViewController.xib; path = Templates/BrowseViewController.xib; sourceTree = "<group>"; };
+		AE95E9DD18CE456B005D9A83 /* FakeExperienceRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeExperienceRepository.h; sourceTree = "<group>"; };
+		AE95E9DE18CE456B005D9A83 /* FakeExperienceRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeExperienceRepository.m; sourceTree = "<group>"; };
+		AE95E9E018CE4599005D9A83 /* Experience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Experience.h; sourceTree = "<group>"; };
+		AE95E9E118CE4599005D9A83 /* Experience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Experience.m; sourceTree = "<group>"; };
+		AE95E9E418CE4625005D9A83 /* ExperienceSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ExperienceSpec.mm; sourceTree = "<group>"; };
+		AE95E9E618CE6108005D9A83 /* ExperienceRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExperienceRepository.h; sourceTree = "<group>"; };
+		AE95E9E718CE623A005D9A83 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AE95EED318CE79AC005D9A83 /* Deferred.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Deferred.xcodeproj; path = Externals/deferred/Deferred.xcodeproj; sourceTree = "<group>"; };
+		AE95EEE018CE79BC005D9A83 /* Cedar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cedar.xcodeproj; path = Externals/cedar/Cedar.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +199,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE95EF0A18CE7A06005D9A83 /* libDeferred.a in Frameworks */,
 				AE95E94618CE330C005D9A83 /* CoreGraphics.framework in Frameworks */,
 				AE95E94818CE330C005D9A83 /* UIKit.framework in Frameworks */,
 				AE95E94418CE330C005D9A83 /* Foundation.framework in Frameworks */,
@@ -89,9 +210,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE95EF0518CE79D6005D9A83 /* libDeferred.a in Frameworks */,
+				AE95EF0418CE79D3005D9A83 /* libCedar-StaticLib.a in Frameworks */,
 				AE95E9A118CE3948005D9A83 /* CoreGraphics.framework in Frameworks */,
 				AE95E99F18CE3948005D9A83 /* UIKit.framework in Frameworks */,
-				AE95E9C318CE39BD005D9A83 /* Cedar-iOS.framework in Frameworks */,
 				AE95E9A018CE3948005D9A83 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,6 +224,7 @@
 		AE95E93718CE330C005D9A83 = {
 			isa = PBXGroup;
 			children = (
+				AE95E9E718CE623A005D9A83 /* Default-568h@2x.png */,
 				AE95E94918CE330C005D9A83 /* BiteSized */,
 				AE95E9A218CE3948005D9A83 /* Specs */,
 				AE95E94218CE330C005D9A83 /* Externals */,
@@ -121,6 +244,8 @@
 		AE95E94218CE330C005D9A83 /* Externals */ = {
 			isa = PBXGroup;
 			children = (
+				AE95EEE018CE79BC005D9A83 /* Cedar.xcodeproj */,
+				AE95EED318CE79AC005D9A83 /* Deferred.xcodeproj */,
 				AE95E94318CE330C005D9A83 /* Foundation.framework */,
 				AE95E94518CE330C005D9A83 /* CoreGraphics.framework */,
 				AE95E94718CE330C005D9A83 /* UIKit.framework */,
@@ -138,6 +263,7 @@
 				AE95E98F18CE3828005D9A83 /* Resources */,
 				AE95E94A18CE330C005D9A83 /* Supporting Files */,
 				AE95E99118CE3828005D9A83 /* Views */,
+				AE95E9D818CE4499005D9A83 /* Templates */,
 			);
 			path = BiteSized;
 			sourceTree = "<group>";
@@ -158,9 +284,8 @@
 		AE95E97818CE36E7005D9A83 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE95E97918CE36E7005D9A83 /* .gitkeep */,
-				AE95E97A18CE36E7005D9A83 /* ViewController.h */,
-				AE95E97B18CE36E7005D9A83 /* ViewController.m */,
+				AE95E9D118CE43DE005D9A83 /* BrowseViewController.h */,
+				AE95E9D218CE43DE005D9A83 /* BrowseViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -176,7 +301,7 @@
 		AE95E98B18CE3828005D9A83 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
-				AE95E98C18CE3828005D9A83 /* .gitkeep */,
+				AE95E9E618CE6108005D9A83 /* ExperienceRepository.h */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -184,7 +309,8 @@
 		AE95E98D18CE3828005D9A83 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AE95E98E18CE3828005D9A83 /* .gitkeep */,
+				AE95E9E018CE4599005D9A83 /* Experience.h */,
+				AE95E9E118CE4599005D9A83 /* Experience.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -200,8 +326,6 @@
 		AE95E99118CE3828005D9A83 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AE95E99818CE3884005D9A83 /* Main.storyboard */,
-				AE95E99218CE3828005D9A83 /* .gitkeep */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,6 +336,7 @@
 				AE95E9B318CE39BD005D9A83 /* Controllers */,
 				AE95E9B518CE39BD005D9A83 /* Extensions */,
 				AE95E9B718CE39BD005D9A83 /* Externals */,
+				AE95E9DC18CE4529005D9A83 /* Fakes */,
 				AE95E9B918CE39BD005D9A83 /* Interfaces */,
 				AE95E9BB18CE39BD005D9A83 /* Models */,
 				AE95E9BD18CE39BD005D9A83 /* Supporting Files */,
@@ -225,7 +350,7 @@
 		AE95E9B318CE39BD005D9A83 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AE95E9B418CE39BD005D9A83 /* .gitkeep */,
+				AE95E9CF18CE3E3B005D9A83 /* BrowseViewControllerSpec.mm */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -241,7 +366,6 @@
 		AE95E9B718CE39BD005D9A83 /* Externals */ = {
 			isa = PBXGroup;
 			children = (
-				AE95E9B818CE39BD005D9A83 /* Cedar-iOS.framework */,
 			);
 			name = Externals;
 			path = Frameworks;
@@ -258,7 +382,7 @@
 		AE95E9BB18CE39BD005D9A83 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AE95E9BC18CE39BD005D9A83 /* .gitkeep */,
+				AE95E9E418CE4625005D9A83 /* ExperienceSpec.mm */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -270,7 +394,6 @@
 				AE95E9C918CE39F7005D9A83 /* main.m */,
 				AE95E9CA18CE39F7005D9A83 /* Specs-Info.plist */,
 				AE95E9CB18CE39F7005D9A83 /* Specs-Prefix.pch */,
-				AE95E9BE18CE39BD005D9A83 /* .gitkeep */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -281,6 +404,50 @@
 				AE95E9C018CE39BD005D9A83 /* .gitkeep */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		AE95E9D818CE4499005D9A83 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				AE95E9D918CE44E5005D9A83 /* BrowseViewController.xib */,
+			);
+			name = Templates;
+			sourceTree = "<group>";
+		};
+		AE95E9DC18CE4529005D9A83 /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				AE95E9DD18CE456B005D9A83 /* FakeExperienceRepository.h */,
+				AE95E9DE18CE456B005D9A83 /* FakeExperienceRepository.m */,
+			);
+			path = Fakes;
+			sourceTree = "<group>";
+		};
+		AE95EED418CE79AC005D9A83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE95EEDB18CE79AC005D9A83 /* libDeferred.a */,
+				AE95EEDD18CE79AC005D9A83 /* libDeferred-OSX.a */,
+				AE95EEDF18CE79AC005D9A83 /* Specs */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE95EEE118CE79BC005D9A83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE95EEEF18CE79BD005D9A83 /* Cedar.framework */,
+				AE95EEF118CE79BD005D9A83 /* Specs */,
+				AE95EEF318CE79BD005D9A83 /* FocusedSpecs */,
+				AE95EEF518CE79BD005D9A83 /* libCedar-StaticLib.a */,
+				AE95EEF718CE79BD005D9A83 /* iOSSpecs.app */,
+				AE95EEF918CE79BD005D9A83 /* iOSFrameworkSpecs.app */,
+				AE95EEFB18CE79BD005D9A83 /* OCUnitApp.app */,
+				AE95EEFD18CE79BD005D9A83 /* OCUnitAppTests.octest */,
+				AE95EEFF18CE79BD005D9A83 /* XCUnitAppTests.xctest */,
+				AE95EF0118CE79BD005D9A83 /* OCUnitAppLogicTests.octest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +464,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				AE95EF0918CE79F6005D9A83 /* PBXTargetDependency */,
 			);
 			name = BiteSized;
 			productName = BiteSized;
@@ -314,6 +482,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				AE95EF0718CE79DB005D9A83 /* PBXTargetDependency */,
+				AE95EF0318CE79CF005D9A83 /* PBXTargetDependency */,
 			);
 			name = Specs;
 			productName = Specs;
@@ -336,10 +506,21 @@
 			knownRegions = (
 				en,
 				Base,
+				English,
 			);
 			mainGroup = AE95E93718CE330C005D9A83;
 			productRefGroup = AE95E94118CE330C005D9A83 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AE95EEE118CE79BC005D9A83 /* Products */;
+					ProjectRef = AE95EEE018CE79BC005D9A83 /* Cedar.xcodeproj */;
+				},
+				{
+					ProductGroup = AE95EED418CE79AC005D9A83 /* Products */;
+					ProjectRef = AE95EED318CE79AC005D9A83 /* Deferred.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				AE95E93F18CE330C005D9A83 /* BiteSized */,
@@ -348,20 +529,110 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		AE95EEDB18CE79AC005D9A83 /* libDeferred.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDeferred.a;
+			remoteRef = AE95EEDA18CE79AC005D9A83 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE95EEDD18CE79AC005D9A83 /* libDeferred-OSX.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libDeferred-OSX.a";
+			remoteRef = AE95EEDC18CE79AC005D9A83 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE95EEDF18CE79AC005D9A83 /* Specs */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = Specs;
+			remoteRef = AE95EEDE18CE79AC005D9A83 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE95EEEF18CE79BD005D9A83 /* Cedar.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Cedar.framework;
+			remoteRef = AE95EEEE18CE79BD005D9A83 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE95EEF118CE79BD005D9A83 /* Specs */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = Specs;
+			remoteRef = AE95EEF018CE79BD005D9A83 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE95EEF318CE79BD005D9A83 /* FocusedSpecs */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = FocusedSpecs;
+			remoteRef = AE95EEF218CE79BD005D9A83 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE95EEF518CE79BD005D9A83 /* libCedar-StaticLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libCedar-StaticLib.a";
+			remoteRef = AE95EEF418CE79BD005D9A83 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE95EEF718CE79BD005D9A83 /* iOSSpecs.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = iOSSpecs.app;
+			remoteRef = AE95EEF618CE79BD005D9A83 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE95EEF918CE79BD005D9A83 /* iOSFrameworkSpecs.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = iOSFrameworkSpecs.app;
+			remoteRef = AE95EEF818CE79BD005D9A83 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE95EEFB18CE79BD005D9A83 /* OCUnitApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = OCUnitApp.app;
+			remoteRef = AE95EEFA18CE79BD005D9A83 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE95EEFD18CE79BD005D9A83 /* OCUnitAppTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OCUnitAppTests.octest;
+			remoteRef = AE95EEFC18CE79BD005D9A83 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE95EEFF18CE79BD005D9A83 /* XCUnitAppTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = XCUnitAppTests.xctest;
+			remoteRef = AE95EEFE18CE79BD005D9A83 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE95EF0118CE79BD005D9A83 /* OCUnitAppLogicTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OCUnitAppLogicTests.octest;
+			remoteRef = AE95EF0018CE79BD005D9A83 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		AE95E93E18CE330C005D9A83 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE95E99918CE3884005D9A83 /* Main.storyboard in Resources */,
 				AE95E98518CE3773005D9A83 /* BiteSized-Info.plist in Resources */,
 				AE95E99618CE3828005D9A83 /* .gitkeep in Resources */,
 				AE95E99318CE3828005D9A83 /* .gitkeep in Resources */,
-				AE95E97C18CE36E7005D9A83 /* .gitkeep in Resources */,
 				AE95E98618CE3773005D9A83 /* InfoPlist.strings in Resources */,
-				AE95E99718CE3828005D9A83 /* .gitkeep in Resources */,
-				AE95E99418CE3828005D9A83 /* .gitkeep in Resources */,
-				AE95E99518CE3828005D9A83 /* .gitkeep in Resources */,
+				AE95E9DA18CE44E5005D9A83 /* BrowseViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,12 +641,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE95E9C218CE39BD005D9A83 /* .gitkeep in Resources */,
+				AE95E9DB18CE44E5005D9A83 /* BrowseViewController.xib in Resources */,
 				AE95E9CE18CE39F7005D9A83 /* Specs-Info.plist in Resources */,
 				AE95E9CC18CE39F7005D9A83 /* InfoPlist.strings in Resources */,
-				AE95E9C518CE39BD005D9A83 /* .gitkeep in Resources */,
-				AE95E9C618CE39BD005D9A83 /* .gitkeep in Resources */,
-				AE95E9C118CE39BD005D9A83 /* .gitkeep in Resources */,
 				AE95E9C418CE39BD005D9A83 /* .gitkeep in Resources */,
+				AE95E9E818CE623A005D9A83 /* Default-568h@2x.png in Resources */,
 				AE95E9C718CE39BD005D9A83 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,9 +657,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE95E9E218CE4599005D9A83 /* Experience.m in Sources */,
 				AE95E98418CE3773005D9A83 /* AppDelegate.m in Sources */,
 				AE95E98718CE3773005D9A83 /* main.m in Sources */,
-				AE95E97D18CE36E7005D9A83 /* ViewController.m in Sources */,
+				AE95E9D418CE43DE005D9A83 /* BrowseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,12 +668,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE95E9DF18CE456B005D9A83 /* FakeExperienceRepository.m in Sources */,
+				AE95E9E318CE4599005D9A83 /* Experience.m in Sources */,
 				AE95E9CD18CE39F7005D9A83 /* main.m in Sources */,
+				AE95E9E518CE4625005D9A83 /* ExperienceSpec.mm in Sources */,
 				AE95E9AF18CE3949005D9A83 /* ExampleSpec.mm in Sources */,
+				AE95E9D518CE43DE005D9A83 /* BrowseViewController.m in Sources */,
+				AE95E9D018CE3E3B005D9A83 /* BrowseViewControllerSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE95EF0318CE79CF005D9A83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Cedar-StaticLib";
+			targetProxy = AE95EF0218CE79CF005D9A83 /* PBXContainerItemProxy */;
+		};
+		AE95EF0718CE79DB005D9A83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Deferred;
+			targetProxy = AE95EF0618CE79DB005D9A83 /* PBXContainerItemProxy */;
+		};
+		AE95EF0918CE79F6005D9A83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Deferred;
+			targetProxy = AE95EF0818CE79F6005D9A83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		AE95E97018CE330D005D9A83 /* Debug */ = {
@@ -484,6 +778,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BiteSized/Supporting Files/BiteSized-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/Externals/**",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/BiteSized/Supporting Files/BiteSized-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -497,6 +796,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BiteSized/Supporting Files/BiteSized-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/Externals/**",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/BiteSized/Supporting Files/BiteSized-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -517,6 +821,11 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/Externals/**",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Specs/Supporting Files/Specs-Info.plist";
 				OTHER_LDFLAGS = (
@@ -540,6 +849,11 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Specs/Supporting Files/Specs-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/Externals/**",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Specs/Supporting Files/Specs-Info.plist";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = (

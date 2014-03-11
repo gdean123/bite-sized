@@ -1,0 +1,6 @@
+[submodule "ios/Externals/deferred"]
+	path = ios/Externals/deferred
+	url = https://github.com/kseebaldt/deferred.git
+[submodule "ios/Externals/cedar"]
+	path = ios/Externals/cedar
+	url = https://github.com/pivotal/cedar.git
