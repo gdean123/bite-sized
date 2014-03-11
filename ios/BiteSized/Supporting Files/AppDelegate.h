@@ -1,15 +1,11 @@
-//
-//  AppDelegate.h
-//  BiteSized
-//
-//  Created by pivotal on 3/10/14.
-//  Copyright (c) 2014 pivotal. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
+
+@class BrowseViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+- (id)initWithBrowseViewController:(BrowseViewController *)browseViewController;
 
 @end

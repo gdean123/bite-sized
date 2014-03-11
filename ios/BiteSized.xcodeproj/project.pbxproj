@@ -39,6 +39,8 @@
 		AE95EF0418CE79D3005D9A83 /* libCedar-StaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95EEF518CE79BD005D9A83 /* libCedar-StaticLib.a */; };
 		AE95EF0518CE79D6005D9A83 /* libDeferred.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95EEDB18CE79AC005D9A83 /* libDeferred.a */; };
 		AE95EF0A18CE7A06005D9A83 /* libDeferred.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95EEDB18CE79AC005D9A83 /* libDeferred.a */; };
+		AE95EF1918CE93FA005D9A83 /* AppDelegateSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE95EF1818CE93FA005D9A83 /* AppDelegateSpec.mm */; };
+		AEB3BA3718CF824E00426872 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95E97F18CE3773005D9A83 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -192,6 +194,7 @@
 		AE95E9E718CE623A005D9A83 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		AE95EED318CE79AC005D9A83 /* Deferred.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Deferred.xcodeproj; path = Externals/deferred/Deferred.xcodeproj; sourceTree = "<group>"; };
 		AE95EEE018CE79BC005D9A83 /* Cedar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cedar.xcodeproj; path = Externals/cedar/Cedar.xcodeproj; sourceTree = "<group>"; };
+		AE95EF1818CE93FA005D9A83 /* AppDelegateSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegateSpec.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -394,6 +397,7 @@
 				AE95E9C918CE39F7005D9A83 /* main.m */,
 				AE95E9CA18CE39F7005D9A83 /* Specs-Info.plist */,
 				AE95E9CB18CE39F7005D9A83 /* Specs-Prefix.pch */,
+				AE95EF1818CE93FA005D9A83 /* AppDelegateSpec.mm */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -669,6 +673,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE95E9DF18CE456B005D9A83 /* FakeExperienceRepository.m in Sources */,
+				AE95EF1918CE93FA005D9A83 /* AppDelegateSpec.mm in Sources */,
+				AEB3BA3718CF824E00426872 /* AppDelegate.m in Sources */,
 				AE95E9E318CE4599005D9A83 /* Experience.m in Sources */,
 				AE95E9CD18CE39F7005D9A83 /* main.m in Sources */,
 				AE95E9E518CE4625005D9A83 /* ExperienceSpec.mm in Sources */,
@@ -894,6 +900,7 @@
 				AE95E9B218CE3949005D9A83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
