@@ -13,4 +13,12 @@
     return deferredExperiences.promise;
 }
 
+- (KSPromise *)create:(Experience *)experience {
+    KSDeferred *deferredCreation = [KSDeferred defer];
+
+    [deferredCreation resolveWithValue:experience];
+
+    return deferredCreation.promise;
+}
+
 @end

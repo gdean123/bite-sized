@@ -44,6 +44,8 @@
 		AEB3BA3B18CF90D500426872 /* RealExperienceRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB3BA3A18CF90D500426872 /* RealExperienceRepository.m */; };
 		AEB3BA3C18CF90D500426872 /* RealExperienceRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB3BA3A18CF90D500426872 /* RealExperienceRepository.m */; };
 		AEB3BA3F18CF9A8100426872 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE95E9E718CE623A005D9A83 /* Default-568h@2x.png */; };
+		AEB3BA4218CFAF9E00426872 /* RealExperienceRepositorySpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AEB3BA4118CFAF9E00426872 /* RealExperienceRepositorySpec.mm */; };
+		AEB3BA4618CFD3DF00426872 /* Blocker.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB3BA4518CFD3DF00426872 /* Blocker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -200,6 +202,9 @@
 		AE95EF1818CE93FA005D9A83 /* AppDelegateSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegateSpec.mm; sourceTree = "<group>"; };
 		AEB3BA3918CF90D500426872 /* RealExperienceRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RealExperienceRepository.h; path = Repositories/RealExperienceRepository.h; sourceTree = "<group>"; };
 		AEB3BA3A18CF90D500426872 /* RealExperienceRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RealExperienceRepository.m; path = Repositories/RealExperienceRepository.m; sourceTree = "<group>"; };
+		AEB3BA4118CFAF9E00426872 /* RealExperienceRepositorySpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = RealExperienceRepositorySpec.mm; path = Repositories/RealExperienceRepositorySpec.mm; sourceTree = "<group>"; };
+		AEB3BA4418CFD3DF00426872 /* Blocker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Blocker.h; path = Helpers/Blocker.h; sourceTree = "<group>"; };
+		AEB3BA4518CFD3DF00426872 /* Blocker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Blocker.m; path = Helpers/Blocker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -342,6 +347,7 @@
 		AE95E9A218CE3948005D9A83 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				AEB3BA4318CFD3B800426872 /* Helpers */,
 				AEB3BA4018CFAEBA00426872 /* Repositories */,
 				AE95E9B318CE39BD005D9A83 /* Controllers */,
 				AE95E9B518CE39BD005D9A83 /* Extensions */,
@@ -464,8 +470,18 @@
 		AEB3BA4018CFAEBA00426872 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				AEB3BA4118CFAF9E00426872 /* RealExperienceRepositorySpec.mm */,
 			);
 			name = Repositories;
+			sourceTree = "<group>";
+		};
+		AEB3BA4318CFD3B800426872 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AEB3BA4418CFD3DF00426872 /* Blocker.h */,
+				AEB3BA4518CFD3DF00426872 /* Blocker.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -690,9 +706,11 @@
 			files = (
 				AE95E9DF18CE456B005D9A83 /* FakeExperienceRepository.m in Sources */,
 				AE95EF1918CE93FA005D9A83 /* AppDelegateSpec.mm in Sources */,
+				AEB3BA4218CFAF9E00426872 /* RealExperienceRepositorySpec.mm in Sources */,
 				AEB3BA3718CF824E00426872 /* AppDelegate.m in Sources */,
 				AE95E9E318CE4599005D9A83 /* Experience.m in Sources */,
 				AE95E9CD18CE39F7005D9A83 /* main.m in Sources */,
+				AEB3BA4618CFD3DF00426872 /* Blocker.m in Sources */,
 				AEB3BA3C18CF90D500426872 /* RealExperienceRepository.m in Sources */,
 				AE95E9E518CE4625005D9A83 /* ExperienceSpec.mm in Sources */,
 				AE95E9AF18CE3949005D9A83 /* ExampleSpec.mm in Sources */,
