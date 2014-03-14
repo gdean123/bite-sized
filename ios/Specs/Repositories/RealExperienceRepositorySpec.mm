@@ -47,13 +47,15 @@ describe(@"RealExperienceRepository", ^{
         return retrievedExperiences;
     };
 
-    xit(@"can retrieve saved experiences", ^{
+    it(@"can retrieve saved experiences", ^{
         createExperienceWithTagline(@"Swim to Alcatraz");
         NSArray *retrievedExperiences = fetchAllExperiences();
 
         Experience *firstExperience = [retrievedExperiences firstObject];
         firstExperience.tagline should equal(@"Swim to Alcatraz");
     });
+
+    xit(@"rejects the promise if the request fails", ^{});
 });
 
 SPEC_END
