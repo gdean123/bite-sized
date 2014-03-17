@@ -1,3 +1,3 @@
 Api::Application.routes.draw do
-  resources :experiences, :only => [:index, :create, :show]
+  resources :experiences, :except => [:new, :update]
 end

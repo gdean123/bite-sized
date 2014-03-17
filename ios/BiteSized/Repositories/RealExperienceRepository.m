@@ -39,11 +39,35 @@
     [[session dataTaskWithRequest:request
                 completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
                     NSDictionary *experienceHash = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-                    Experience *createdExperience = [[Experience alloc] initWithTagline:[experienceHash objectForKey:@"tagline"]];
+                    unsigned int experienceId = [[experienceHash objectForKey:@"id"] integerValue];
+                    NSString *experienceTagline = [experienceHash objectForKey:@"tagline"];
+
+                    Experience *createdExperience = [[Experience alloc] initWithIdentifier:experienceId tagline:experienceTagline];
                     [deferredCreation resolveWithValue:createdExperience];
                 }] resume];
 
     return deferredCreation.promise;
+}
+
+- (KSPromise *)destroy:(Experience *)experience {
+    KSDeferred *deferredDestruction = [KSDeferred defer];
+
+    NSString *url = [NSString stringWithFormat:@"http://localhost:3000/experiences/%d", experience.identifier];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:url]];
+    request.HTTPMethod = @"DELETE";
+
+    NSURLSession *session = [NSURLSession sharedSession];
+    [[session dataTaskWithRequest:request
+                completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                    if (error) {
+                        [deferredDestruction rejectWithError:error];
+                    }
+                    else {
+                        [deferredDestruction resolveWithValue:nil];
+                    }
+                }] resume];
+
+    return deferredDestruction.promise;
 }
 
 @end

@@ -3,6 +3,7 @@
 #import "RealExperienceRepository.h"
 #import "Experience.h"
 #import "Blocker.h"
+#import "KSDeferred.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
@@ -12,26 +13,25 @@ SPEC_BEGIN(RealExperienceRepositorySpec)
 describe(@"RealExperienceRepository", ^{
     __block RealExperienceRepository *realExperienceRepository;
     __block Blocker *blocker;
-
-    beforeEach(^{
-        realExperienceRepository = [[RealExperienceRepository alloc] init];
-        blocker = [[Blocker alloc] init];
-    });
+    __block Experience *createdExperience;
 
     id (^logErrors)(NSError *) = ^id(NSError *error) {
         NSLog(@"Error: %@", error.description);
         return error;
     };
 
-    void (^createExperienceWithTagline)(NSString *) = ^(NSString *tagline) {
+    Experience *(^createExperienceWithTagline)(NSString *) = ^(NSString *tagline) {
         Experience *experienceToCreate = [[Experience alloc] initWithTagline:tagline];
+        __block Experience *createdExperience;
 
-        [[realExperienceRepository create:experienceToCreate] then:^id(Experience *createdExperience) {
+        [[realExperienceRepository create:experienceToCreate] then:^id(Experience *experience) {
             [blocker doneWaiting];
-            return createdExperience;
+            createdExperience = experience;
+            return experience;
         } error:logErrors];
 
         [blocker wait];
+        return createdExperience;
     };
 
     NSArray *(^fetchAllExperiences)() = ^NSArray *() {
@@ -47,12 +47,28 @@ describe(@"RealExperienceRepository", ^{
         return retrievedExperiences;
     };
 
-    it(@"can retrieve saved experiences", ^{
-        createExperienceWithTagline(@"Swim to Alcatraz");
-        NSArray *retrievedExperiences = fetchAllExperiences();
+    void (^destroyExperience)(Experience *) = ^(Experience *experienceToDestroy) {
+        [[realExperienceRepository destroy:experienceToDestroy] then:^id(id unused) {
+            [blocker doneWaiting];
+            return unused;
+        } error:logErrors];
 
-        Experience *firstExperience = [retrievedExperiences firstObject];
-        firstExperience.tagline should equal(@"Swim to Alcatraz");
+        [blocker wait];
+    };
+
+    beforeEach(^{
+        realExperienceRepository = [[RealExperienceRepository alloc] init];
+        blocker = [[Blocker alloc] init];
+        createdExperience = createExperienceWithTagline(@"Pet a rabbit");
+    });
+
+    afterEach(^{
+        destroyExperience(createdExperience);
+    });
+
+    it(@"can retrieve saved experiences", ^{
+        Experience *lastExperience = [fetchAllExperiences() lastObject];
+        lastExperience.tagline should equal(@"Pet a rabbit");
     });
 
     xit(@"rejects the promise if the request fails", ^{});

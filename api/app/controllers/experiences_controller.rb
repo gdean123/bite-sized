@@ -13,4 +13,9 @@ class ExperiencesController < ApplicationController
     respond_with Experience.all
   end
 
+  def destroy
+    experience = Experience.find(params[:id])
+    respond_with experience.destroy
+  end
+
 end

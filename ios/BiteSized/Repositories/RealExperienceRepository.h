@@ -6,5 +6,6 @@
 
 - (KSPromise *)fetchAll;
 - (KSPromise *)create:(Experience *)experience;
+- (KSPromise *)destroy:(Experience *)experience;
 
 @end

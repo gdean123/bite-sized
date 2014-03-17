@@ -33,3 +33,12 @@ describe 'POST /experiences' do
     expect(Experience.count).to eq(1)
   end
 end
+
+describe 'DELETE /experiences/:id' do
+  it 'destroys the specified experience' do
+    experience = FactoryGirl.create(:experience)
+    delete "/experiences/#{experience.id}.json"
+    expect(Experience.count).to eq(0)
+    expect(response.status).to eq(204)
+  end
+end
