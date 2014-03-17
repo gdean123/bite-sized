@@ -1,26 +1,20 @@
 #import "RealExperienceRepository.h"
 #import "KSDeferred.h"
+
+#import "NSURLSession+BiteSized.h"
 #import "Experience.h"
+#import "HttpClient.h"
 
 @implementation RealExperienceRepository
 
 - (KSPromise *)fetchAll {
     KSDeferred *deferredExperiences = [KSDeferred defer];
+    HttpClient *client = [[HttpClient alloc] initWithSession:[NSURLSession sharedSession]];
 
-    NSURLSession *session = [NSURLSession sharedSession];
-    [[session dataTaskWithURL:[NSURL URLWithString:@"http://localhost:3000/experiences"]
-            completionHandler:^(NSData *data,
-                                NSURLResponse *response,
-                                NSError *error) {
-                if (error) {
-                    [deferredExperiences rejectWithError:error];
-                }
-                else {
-                    NSArray *experienceArray = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-                    Experience *experience = [[Experience alloc] initWithTagline:[[experienceArray firstObject] objectForKey:@"tagline"]];
-                    [deferredExperiences resolveWithValue:@[experience]];
-                }
-            }] resume];
+    [client getList:@"http://localhost:3000/experiences" then:^(NSArray *experienceList) {
+        Experience *experience = [[Experience alloc] initWithTagline:[[experienceList firstObject] objectForKey:@"tagline"]];
+        [deferredExperiences resolveWithValue:@[experience]];
+    } error:^(NSError *error) {}];
 
     return deferredExperiences.promise;
 }

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE2F64E118D76CDD00D13FCB /* HttpClientSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE2F64E018D76CDD00D13FCB /* HttpClientSpec.mm */; };
+		AE2F64F018D772B900D13FCB /* FakeURLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2F64EF18D772B900D13FCB /* FakeURLSession.m */; };
+		AE2F64F318D776E800D13FCB /* HttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2F64F218D776E800D13FCB /* HttpClient.m */; };
+		AE2F64F418D776E800D13FCB /* HttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2F64F218D776E800D13FCB /* HttpClient.m */; };
+		AE2F64F718D7A42E00D13FCB /* NSURLSession+BiteSized.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2F64F618D7A42E00D13FCB /* NSURLSession+BiteSized.m */; };
+		AE2F64F818D7A42E00D13FCB /* NSURLSession+BiteSized.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2F64F618D7A42E00D13FCB /* NSURLSession+BiteSized.m */; };
 		AE95E94418CE330C005D9A83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95E94318CE330C005D9A83 /* Foundation.framework */; };
 		AE95E94618CE330C005D9A83 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95E94518CE330C005D9A83 /* CoreGraphics.framework */; };
 		AE95E94818CE330C005D9A83 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95E94718CE330C005D9A83 /* UIKit.framework */; };
@@ -14,19 +20,18 @@
 		AE95E98518CE3773005D9A83 /* BiteSized-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE95E98018CE3773005D9A83 /* BiteSized-Info.plist */; };
 		AE95E98618CE3773005D9A83 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE95E98218CE3773005D9A83 /* InfoPlist.strings */; };
 		AE95E98718CE3773005D9A83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95E98318CE3773005D9A83 /* main.m */; };
-		AE95E99318CE3828005D9A83 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AE95E98A18CE3828005D9A83 /* .gitkeep */; };
 		AE95E99618CE3828005D9A83 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AE95E99018CE3828005D9A83 /* .gitkeep */; };
 		AE95E99F18CE3948005D9A83 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95E94718CE330C005D9A83 /* UIKit.framework */; };
 		AE95E9A018CE3948005D9A83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95E94318CE330C005D9A83 /* Foundation.framework */; };
 		AE95E9A118CE3948005D9A83 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95E94518CE330C005D9A83 /* CoreGraphics.framework */; };
-		AE95E9AF18CE3949005D9A83 /* ExampleSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE95E9AE18CE3949005D9A83 /* ExampleSpec.mm */; settings = {COMPILER_FLAGS = "-fo-objc-arc"; }; };
+		AE95E9AF18CE3949005D9A83 /* ExampleSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE95E9AE18CE3949005D9A83 /* ExampleSpec.mm */; };
 		AE95E9C218CE39BD005D9A83 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AE95E9B618CE39BD005D9A83 /* .gitkeep */; };
 		AE95E9C418CE39BD005D9A83 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AE95E9BA18CE39BD005D9A83 /* .gitkeep */; };
 		AE95E9C718CE39BD005D9A83 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = AE95E9C018CE39BD005D9A83 /* .gitkeep */; };
 		AE95E9CC18CE39F7005D9A83 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE95E9C818CE39F7005D9A83 /* InfoPlist.strings */; };
 		AE95E9CD18CE39F7005D9A83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95E9C918CE39F7005D9A83 /* main.m */; };
 		AE95E9CE18CE39F7005D9A83 /* Specs-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE95E9CA18CE39F7005D9A83 /* Specs-Info.plist */; };
-		AE95E9D018CE3E3B005D9A83 /* BrowseViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE95E9CF18CE3E3B005D9A83 /* BrowseViewControllerSpec.mm */; settings = {COMPILER_FLAGS = "-fo-objc-arc"; }; };
+		AE95E9D018CE3E3B005D9A83 /* BrowseViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE95E9CF18CE3E3B005D9A83 /* BrowseViewControllerSpec.mm */; };
 		AE95E9D418CE43DE005D9A83 /* BrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95E9D218CE43DE005D9A83 /* BrowseViewController.m */; };
 		AE95E9D518CE43DE005D9A83 /* BrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95E9D218CE43DE005D9A83 /* BrowseViewController.m */; };
 		AE95E9DA18CE44E5005D9A83 /* BrowseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE95E9D918CE44E5005D9A83 /* BrowseViewController.xib */; };
@@ -34,7 +39,7 @@
 		AE95E9DF18CE456B005D9A83 /* FakeExperienceRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95E9DE18CE456B005D9A83 /* FakeExperienceRepository.m */; };
 		AE95E9E218CE4599005D9A83 /* Experience.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95E9E118CE4599005D9A83 /* Experience.m */; };
 		AE95E9E318CE4599005D9A83 /* Experience.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95E9E118CE4599005D9A83 /* Experience.m */; };
-		AE95E9E518CE4625005D9A83 /* ExperienceSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE95E9E418CE4625005D9A83 /* ExperienceSpec.mm */; settings = {COMPILER_FLAGS = "-fo-objc-arc"; }; };
+		AE95E9E518CE4625005D9A83 /* ExperienceSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE95E9E418CE4625005D9A83 /* ExperienceSpec.mm */; };
 		AE95E9E818CE623A005D9A83 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE95E9E718CE623A005D9A83 /* Default-568h@2x.png */; };
 		AE95EF0418CE79D3005D9A83 /* libCedar-StaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95EEF518CE79BD005D9A83 /* libCedar-StaticLib.a */; };
 		AE95EF0518CE79D6005D9A83 /* libDeferred.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95EEDB18CE79AC005D9A83 /* libDeferred.a */; };
@@ -164,6 +169,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE2F64E018D76CDD00D13FCB /* HttpClientSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HttpClientSpec.mm; sourceTree = "<group>"; };
+		AE2F64EE18D772B900D13FCB /* FakeURLSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeURLSession.h; sourceTree = "<group>"; };
+		AE2F64EF18D772B900D13FCB /* FakeURLSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeURLSession.m; sourceTree = "<group>"; };
+		AE2F64F118D776E800D13FCB /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
+		AE2F64F218D776E800D13FCB /* HttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpClient.m; sourceTree = "<group>"; };
+		AE2F64F518D7A42E00D13FCB /* NSURLSession+BiteSized.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+BiteSized.h"; sourceTree = "<group>"; };
+		AE2F64F618D7A42E00D13FCB /* NSURLSession+BiteSized.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+BiteSized.m"; sourceTree = "<group>"; };
+		AE2F64F918D7A4BA00D13FCB /* SimpleURLSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleURLSession.h; sourceTree = "<group>"; };
 		AE95E94018CE330C005D9A83 /* BiteSized.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiteSized.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE95E94318CE330C005D9A83 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AE95E94518CE330C005D9A83 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -174,7 +187,6 @@
 		AE95E98118CE3773005D9A83 /* BiteSized-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BiteSized-Prefix.pch"; path = "Supporting Files/BiteSized-Prefix.pch"; sourceTree = "<group>"; };
 		AE95E98218CE3773005D9A83 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = "Supporting Files/InfoPlist.strings"; sourceTree = "<group>"; };
 		AE95E98318CE3773005D9A83 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Supporting Files/main.m"; sourceTree = "<group>"; };
-		AE95E98A18CE3828005D9A83 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		AE95E99018CE3828005D9A83 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		AE95E99E18CE3948005D9A83 /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE95E9AB18CE3948005D9A83 /* Rakefile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
@@ -307,7 +319,8 @@
 		AE95E98918CE3828005D9A83 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				AE95E98A18CE3828005D9A83 /* .gitkeep */,
+				AE2F64F518D7A42E00D13FCB /* NSURLSession+BiteSized.h */,
+				AE2F64F618D7A42E00D13FCB /* NSURLSession+BiteSized.m */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -316,6 +329,7 @@
 			isa = PBXGroup;
 			children = (
 				AE95E9E618CE6108005D9A83 /* ExperienceRepository.h */,
+				AE2F64F918D7A4BA00D13FCB /* SimpleURLSession.h */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -325,6 +339,8 @@
 			children = (
 				AE95E9E018CE4599005D9A83 /* Experience.h */,
 				AE95E9E118CE4599005D9A83 /* Experience.m */,
+				AE2F64F118D776E800D13FCB /* HttpClient.h */,
+				AE2F64F218D776E800D13FCB /* HttpClient.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -390,6 +406,7 @@
 			isa = PBXGroup;
 			children = (
 				AE95E9E418CE4625005D9A83 /* ExperienceSpec.mm */,
+				AE2F64E018D76CDD00D13FCB /* HttpClientSpec.mm */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -427,6 +444,8 @@
 			children = (
 				AE95E9DD18CE456B005D9A83 /* FakeExperienceRepository.h */,
 				AE95E9DE18CE456B005D9A83 /* FakeExperienceRepository.m */,
+				AE2F64EE18D772B900D13FCB /* FakeURLSession.h */,
+				AE2F64EF18D772B900D13FCB /* FakeURLSession.m */,
 			);
 			path = Fakes;
 			sourceTree = "<group>";
@@ -664,7 +683,6 @@
 			files = (
 				AE95E98518CE3773005D9A83 /* BiteSized-Info.plist in Resources */,
 				AE95E99618CE3828005D9A83 /* .gitkeep in Resources */,
-				AE95E99318CE3828005D9A83 /* .gitkeep in Resources */,
 				AE95E98618CE3773005D9A83 /* InfoPlist.strings in Resources */,
 				AE95E9DA18CE44E5005D9A83 /* BrowseViewController.xib in Resources */,
 				AEB3BA3F18CF9A8100426872 /* Default-568h@2x.png in Resources */,
@@ -692,6 +710,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE2F64F318D776E800D13FCB /* HttpClient.m in Sources */,
+				AE2F64F718D7A42E00D13FCB /* NSURLSession+BiteSized.m in Sources */,
 				AEB3BA3B18CF90D500426872 /* RealExperienceRepository.m in Sources */,
 				AE95E9E218CE4599005D9A83 /* Experience.m in Sources */,
 				AE95E98418CE3773005D9A83 /* AppDelegate.m in Sources */,
@@ -706,14 +726,18 @@
 			files = (
 				AE95E9DF18CE456B005D9A83 /* FakeExperienceRepository.m in Sources */,
 				AE95EF1918CE93FA005D9A83 /* AppDelegateSpec.mm in Sources */,
+				AE2F64E118D76CDD00D13FCB /* HttpClientSpec.mm in Sources */,
 				AEB3BA4218CFAF9E00426872 /* RealExperienceRepositorySpec.mm in Sources */,
 				AEB3BA3718CF824E00426872 /* AppDelegate.m in Sources */,
 				AE95E9E318CE4599005D9A83 /* Experience.m in Sources */,
 				AE95E9CD18CE39F7005D9A83 /* main.m in Sources */,
+				AE2F64F018D772B900D13FCB /* FakeURLSession.m in Sources */,
 				AEB3BA4618CFD3DF00426872 /* Blocker.m in Sources */,
+				AE2F64F818D7A42E00D13FCB /* NSURLSession+BiteSized.m in Sources */,
 				AEB3BA3C18CF90D500426872 /* RealExperienceRepository.m in Sources */,
 				AE95E9E518CE4625005D9A83 /* ExperienceSpec.mm in Sources */,
 				AE95E9AF18CE3949005D9A83 /* ExampleSpec.mm in Sources */,
+				AE2F64F418D776E800D13FCB /* HttpClient.m in Sources */,
 				AE95E9D518CE43DE005D9A83 /* BrowseViewController.m in Sources */,
 				AE95E9D018CE3E3B005D9A83 /* BrowseViewControllerSpec.mm in Sources */,
 			);
