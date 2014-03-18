@@ -31,4 +31,46 @@
                     }] resume];
 }
 
+- (void)post:(NSString *)url
+    withBody:(NSDictionary *)body
+        then:(void (^)(NSDictionary *dictionary))successHandler
+       error:(void (^)(NSError *error))errorHandler {
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:url]];
+
+    NSString *postBody = [self createPostParams:body];
+    request.HTTPBody = [postBody dataUsingEncoding:NSUTF8StringEncoding];
+    request.HTTPMethod = @"POST";
+
+    [[self.urlSession dataTaskWithRequest:request
+                        completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                            NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+                            successHandler(dictionary);
+                        }] resume];
+}
+
+- (void)delete:(NSString *)url
+          then:(void (^)())successHandler
+         error:(void (^)(NSError *error))errorHandler {
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:url]];
+    request.HTTPMethod = @"DELETE";
+
+    [[self.urlSession dataTaskWithRequest:request
+                        completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                            successHandler();
+                        }] resume];
+}
+
+#pragma mark -- Private
+
+- (NSString *)createPostParams:(NSDictionary *)body {
+    NSMutableArray *keyValueArray = [[NSMutableArray alloc] init];
+
+    for (NSString *key in body) {
+        NSString *value = [body objectForKey:key];
+        [keyValueArray addObject:[NSString stringWithFormat:@"%@=%@", key, value]];
+    }
+
+    return [keyValueArray componentsJoinedByString:@"&"];
+}
+
 @end

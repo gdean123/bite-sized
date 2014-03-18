@@ -21,45 +21,33 @@
 
 - (KSPromise *)create:(Experience *)experience {
     KSDeferred *deferredCreation = [KSDeferred defer];
+    HttpClient *client = [[HttpClient alloc] initWithSession:[NSURLSession sharedSession]];
 
-    NSURL *url = [NSURL URLWithString:@"http://localhost:3000/experiences"];
-    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
-    NSString *experienceData = [NSString stringWithFormat:@"tagline=%@", experience.tagline];
+    [client post:@"http://localhost:3000/experiences"
+        withBody:@{@"tagline": experience.tagline}
+            then:^(NSDictionary *experienceHash) {
+                unsigned int experienceId = [[experienceHash objectForKey:@"id"] integerValue];
+                NSString *experienceTagline = [experienceHash objectForKey:@"tagline"];
 
-    request.HTTPBody = [experienceData dataUsingEncoding:NSUTF8StringEncoding];
-    request.HTTPMethod = @"POST";
-
-    NSURLSession *session = [NSURLSession sharedSession];
-    [[session dataTaskWithRequest:request
-                completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-                    NSDictionary *experienceHash = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-                    unsigned int experienceId = [[experienceHash objectForKey:@"id"] integerValue];
-                    NSString *experienceTagline = [experienceHash objectForKey:@"tagline"];
-
-                    Experience *createdExperience = [[Experience alloc] initWithIdentifier:experienceId tagline:experienceTagline];
-                    [deferredCreation resolveWithValue:createdExperience];
-                }] resume];
+                Experience *createdExperience = [[Experience alloc] initWithIdentifier:experienceId tagline:experienceTagline];
+                [deferredCreation resolveWithValue:createdExperience];
+            }
+           error:^(NSError *error) {}];
 
     return deferredCreation.promise;
 }
 
 - (KSPromise *)destroy:(Experience *)experience {
     KSDeferred *deferredDestruction = [KSDeferred defer];
+    HttpClient *client = [[HttpClient alloc] initWithSession:[NSURLSession sharedSession]];
 
     NSString *url = [NSString stringWithFormat:@"http://localhost:3000/experiences/%d", experience.identifier];
-    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:url]];
-    request.HTTPMethod = @"DELETE";
 
-    NSURLSession *session = [NSURLSession sharedSession];
-    [[session dataTaskWithRequest:request
-                completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-                    if (error) {
-                        [deferredDestruction rejectWithError:error];
-                    }
-                    else {
-                        [deferredDestruction resolveWithValue:nil];
-                    }
-                }] resume];
+    [client delete:url then:^{
+        [deferredDestruction resolveWithValue:nil];
+    } error:^(NSError *error) {
+        [deferredDestruction rejectWithError:error];
+    }];
 
     return deferredDestruction.promise;
 }
