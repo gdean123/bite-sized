@@ -4,3 +4,6 @@
 [submodule "ios/Externals/cedar"]
 	path = ios/Externals/cedar
 	url = https://github.com/pivotal/cedar.git
+[submodule "ios/Externals/SDWebImage"]
+	path = ios/Externals/SDWebImage
+	url = https://github.com/rs/SDWebImage.git
