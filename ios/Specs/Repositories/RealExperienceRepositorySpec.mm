@@ -70,8 +70,6 @@ describe(@"RealExperienceRepository", ^{
         Experience *lastExperience = [fetchAllExperiences() lastObject];
         lastExperience.tagline should equal(@"Pet a rabbit");
     });
-
-    xit(@"rejects the promise if the request fails", ^{});
 });
 
 SPEC_END
