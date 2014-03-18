@@ -27,7 +27,7 @@
                                         NSURLResponse *response,
                                         NSError *error) {
                         NSArray *responseArray = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-                        successHandler(responseArray);
+                        [self runOnMainThread:^{ successHandler(responseArray); }];
                     }] resume];
 }
 
@@ -44,7 +44,7 @@
     [[self.urlSession dataTaskWithRequest:request
                         completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
                             NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-                            successHandler(dictionary);
+                            [self runOnMainThread:^{ successHandler(dictionary); }];
                         }] resume];
 }
 
@@ -56,11 +56,21 @@
 
     [[self.urlSession dataTaskWithRequest:request
                         completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-                            successHandler();
+                            [self runOnMainThread:^{ successHandler(); }];
                         }] resume];
 }
 
 #pragma mark -- Private
+
+- (void)runOnMainThread:(void (^)())block {
+    if (!block) return;
+
+    if ([NSThread isMainThread]) {
+        block();
+    } else {
+        dispatch_async(dispatch_get_main_queue(), block);
+    }
+}
 
 - (NSString *)createPostParams:(NSDictionary *)body {
     NSMutableArray *keyValueArray = [[NSMutableArray alloc] init];

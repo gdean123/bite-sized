@@ -25,6 +25,7 @@
     [super viewDidLoad];
 
     [[self.experienceRepository fetchAll] then:^NSArray *(NSArray *experiences) {
+        
         Experience *firstExperience = experiences[0];
         self.tagline.text = firstExperience.tagline;
 
