@@ -12,7 +12,7 @@
     HttpClient *client = [[HttpClient alloc] initWithSession:[NSURLSession sharedSession]];
 
     [client getList:@"http://localhost:3000/experiences" then:^(NSArray *experienceList) {
-        Experience *experience = [[Experience alloc] initWithTagline:[[experienceList firstObject] objectForKey:@"tagline"]];
+        Experience *experience = [[Experience alloc] initWithTagline:[[experienceList firstObject] objectForKey:@"tagline"] imageUrl:@"not_implemented"];
         [deferredExperiences resolveWithValue:@[experience]];
     } error:^(NSError *error) {}];
 
@@ -29,7 +29,7 @@
                 unsigned int experienceId = [[experienceHash objectForKey:@"id"] integerValue];
                 NSString *experienceTagline = [experienceHash objectForKey:@"tagline"];
 
-                Experience *createdExperience = [[Experience alloc] initWithIdentifier:experienceId tagline:experienceTagline];
+                Experience *createdExperience = [[Experience alloc] initWithIdentifier:experienceId tagline:experienceTagline imageUrl:@"not_implemented"];
                 [deferredCreation resolveWithValue:createdExperience];
             }
            error:^(NSError *error) {}];

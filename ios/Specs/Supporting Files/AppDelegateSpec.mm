@@ -1,6 +1,7 @@
 #import "AppDelegate.h"
 #import "BrowseViewController.h"
 #import "FakeExperienceRepository.h"
+#import "FakeImageRepository.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
@@ -13,7 +14,8 @@ describe(@"AppDelegate", ^{
 
     beforeEach(^{
         FakeExperienceRepository *experienceRepository = [[FakeExperienceRepository alloc] init];
-        browseViewController = [[BrowseViewController alloc] initWithRepository:experienceRepository];
+        FakeImageRepository *imageRepository = [[FakeImageRepository alloc] init];
+        browseViewController = [[BrowseViewController alloc] initWithExperienceRepository:experienceRepository imageRepository:imageRepository];
 
         appDelegate = [[AppDelegate alloc] initWithBrowseViewController:browseViewController];
         [appDelegate application:nil didFinishLaunchingWithOptions:nil];

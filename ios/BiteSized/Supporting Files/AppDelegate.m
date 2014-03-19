@@ -1,6 +1,7 @@
 #import "AppDelegate.h"
 #import "BrowseViewController.h"
 #import "RealExperienceRepository.h"
+#import "RealImageRepository.h"
 
 @interface AppDelegate ()
 
@@ -12,7 +13,8 @@
 
 - (id)init {
     RealExperienceRepository *experienceRepository = [[RealExperienceRepository alloc] init];
-    BrowseViewController *browseViewController = [[BrowseViewController alloc] initWithRepository:experienceRepository];
+    RealImageRepository *imageRepository = [[RealImageRepository alloc] init];
+    BrowseViewController *browseViewController = [[BrowseViewController alloc] initWithExperienceRepository:experienceRepository imageRepository:imageRepository];
 
     return [self initWithBrowseViewController:browseViewController];
 }

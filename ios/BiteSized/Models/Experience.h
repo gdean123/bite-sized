@@ -4,10 +4,11 @@
 
 extern const unsigned int NEW_EXPERIENCE_IDENTIFIER;
 
-- (id)initWithTagline:(NSString *)tagline;
-- (id)initWithIdentifier:(unsigned int)identifier tagline:(NSString *)tagline;
-
-@property(strong, nonatomic) NSString *tagline;
 @property(assign, nonatomic) unsigned int identifier;
+@property(strong, nonatomic) NSString *tagline;
+@property(strong, nonatomic) NSString *imageUrl;
+
+- (id)initWithTagline:(NSString *)tagline imageUrl:(NSString *)imageUrl;
+- (id)initWithIdentifier:(unsigned int)identifier tagline:(NSString *)tagline imageUrl:(NSString *)imageUrl;
 
 @end

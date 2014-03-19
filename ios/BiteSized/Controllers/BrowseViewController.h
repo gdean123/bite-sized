@@ -1,11 +1,12 @@
 #import <UIKit/UIKit.h>
 
-@protocol ExperienceRepository;
+@protocol ExperienceRepository, ImageRepository;
 
 @interface BrowseViewController : UIViewController
 
-- (id)initWithRepository:(id<ExperienceRepository>)repository;
-
 @property (weak, nonatomic) IBOutlet UILabel *tagline;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
+- (id)initWithExperienceRepository:(id<ExperienceRepository>)experienceRepository imageRepository:(id<ImageRepository>)imageRepository;
 
 @end

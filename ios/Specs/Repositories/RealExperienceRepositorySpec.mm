@@ -21,7 +21,7 @@ describe(@"RealExperienceRepository", ^{
     };
 
     Experience *(^createExperienceWithTagline)(NSString *) = ^(NSString *tagline) {
-        Experience *experienceToCreate = [[Experience alloc] initWithTagline:tagline];
+        Experience *experienceToCreate = [[Experience alloc] initWithTagline:tagline imageUrl:@"http://images.com/some_image.png"];
         __block Experience *createdExperience;
 
         [[realExperienceRepository create:experienceToCreate] then:^id(Experience *experience) {

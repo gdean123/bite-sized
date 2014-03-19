@@ -17,6 +17,10 @@
 		AE2F651518D8D3C600D13FCB /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2F651418D8D3C600D13FCB /* ImageIO.framework */; };
 		AE2F651818D8D40400D13FCB /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2F650218D8D06F00D13FCB /* libSDWebImage.a */; };
 		AE2F651918D8D40B00D13FCB /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2F651418D8D3C600D13FCB /* ImageIO.framework */; };
+		AE2F651C18D8ECF600D13FCB /* FakeImageRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2F651B18D8ECF600D13FCB /* FakeImageRepository.m */; };
+		AE2F652018D8F92900D13FCB /* RealImageRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2F651F18D8F92900D13FCB /* RealImageRepository.m */; };
+		AE2F652118D8F92900D13FCB /* RealImageRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2F651F18D8F92900D13FCB /* RealImageRepository.m */; };
+		AE2F652418D915FE00D13FCB /* three_funny_cats.png in Resources */ = {isa = PBXBuildFile; fileRef = AE2F652318D915FE00D13FCB /* three_funny_cats.png */; };
 		AE95E94418CE330C005D9A83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95E94318CE330C005D9A83 /* Foundation.framework */; };
 		AE95E94618CE330C005D9A83 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95E94518CE330C005D9A83 /* CoreGraphics.framework */; };
 		AE95E94818CE330C005D9A83 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95E94718CE330C005D9A83 /* UIKit.framework */; };
@@ -218,6 +222,12 @@
 		AE2F64F918D7A4BA00D13FCB /* SimpleURLSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleURLSession.h; sourceTree = "<group>"; };
 		AE2F64FA18D8D06F00D13FCB /* SDWebImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage.xcodeproj; path = Externals/SDWebImage/SDWebImage.xcodeproj; sourceTree = "<group>"; };
 		AE2F651418D8D3C600D13FCB /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		AE2F651A18D8ECF600D13FCB /* FakeImageRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeImageRepository.h; sourceTree = "<group>"; };
+		AE2F651B18D8ECF600D13FCB /* FakeImageRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeImageRepository.m; sourceTree = "<group>"; };
+		AE2F651D18D8EECB00D13FCB /* ImageRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageRepository.h; sourceTree = "<group>"; };
+		AE2F651E18D8F92900D13FCB /* RealImageRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RealImageRepository.h; path = Repositories/RealImageRepository.h; sourceTree = "<group>"; };
+		AE2F651F18D8F92900D13FCB /* RealImageRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RealImageRepository.m; path = Repositories/RealImageRepository.m; sourceTree = "<group>"; };
+		AE2F652318D915FE00D13FCB /* three_funny_cats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = three_funny_cats.png; path = Fixtures/three_funny_cats.png; sourceTree = "<group>"; };
 		AE95E94018CE330C005D9A83 /* BiteSized.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiteSized.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE95E94318CE330C005D9A83 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AE95E94518CE330C005D9A83 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -299,6 +309,14 @@
 				AE2F650618D8D06F00D13FCB /* libSDWebImage+MKAnnotation.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AE2F652218D915EC00D13FCB /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				AE2F652318D915FE00D13FCB /* three_funny_cats.png */,
+			);
+			name = Fixtures;
 			sourceTree = "<group>";
 		};
 		AE95E93718CE330C005D9A83 = {
@@ -387,6 +405,7 @@
 			children = (
 				AE95E9E618CE6108005D9A83 /* ExperienceRepository.h */,
 				AE2F64F918D7A4BA00D13FCB /* SimpleURLSession.h */,
+				AE2F651D18D8EECB00D13FCB /* ImageRepository.h */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -420,6 +439,7 @@
 		AE95E9A218CE3948005D9A83 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				AE2F652218D915EC00D13FCB /* Fixtures */,
 				AEB3BA4318CFD3B800426872 /* Helpers */,
 				AEB3BA4018CFAEBA00426872 /* Repositories */,
 				AE95E9B318CE39BD005D9A83 /* Controllers */,
@@ -503,6 +523,8 @@
 				AE95E9DE18CE456B005D9A83 /* FakeExperienceRepository.m */,
 				AE2F64EE18D772B900D13FCB /* FakeURLSession.h */,
 				AE2F64EF18D772B900D13FCB /* FakeURLSession.m */,
+				AE2F651A18D8ECF600D13FCB /* FakeImageRepository.h */,
+				AE2F651B18D8ECF600D13FCB /* FakeImageRepository.m */,
 			);
 			path = Fakes;
 			sourceTree = "<group>";
@@ -539,6 +561,8 @@
 			children = (
 				AEB3BA3918CF90D500426872 /* RealExperienceRepository.h */,
 				AEB3BA3A18CF90D500426872 /* RealExperienceRepository.m */,
+				AE2F651E18D8F92900D13FCB /* RealImageRepository.h */,
+				AE2F651F18D8F92900D13FCB /* RealImageRepository.m */,
 			);
 			name = Repositories;
 			sourceTree = "<group>";
@@ -777,6 +801,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE2F652418D915FE00D13FCB /* three_funny_cats.png in Resources */,
 				AE95E9C218CE39BD005D9A83 /* .gitkeep in Resources */,
 				AE95E9DB18CE44E5005D9A83 /* BrowseViewController.xib in Resources */,
 				AE95E9CE18CE39F7005D9A83 /* Specs-Info.plist in Resources */,
@@ -801,6 +826,7 @@
 				AE95E98418CE3773005D9A83 /* AppDelegate.m in Sources */,
 				AE95E98718CE3773005D9A83 /* main.m in Sources */,
 				AE95E9D418CE43DE005D9A83 /* BrowseViewController.m in Sources */,
+				AE2F652018D8F92900D13FCB /* RealImageRepository.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -820,6 +846,8 @@
 				AE2F64F818D7A42E00D13FCB /* NSURLSession+BiteSized.m in Sources */,
 				AEB3BA3C18CF90D500426872 /* RealExperienceRepository.m in Sources */,
 				AE95E9E518CE4625005D9A83 /* ExperienceSpec.mm in Sources */,
+				AE2F651C18D8ECF600D13FCB /* FakeImageRepository.m in Sources */,
+				AE2F652118D8F92900D13FCB /* RealImageRepository.m in Sources */,
 				AE95E9AF18CE3949005D9A83 /* ExampleSpec.mm in Sources */,
 				AE2F64F418D776E800D13FCB /* HttpClient.m in Sources */,
 				AE95E9D518CE43DE005D9A83 /* BrowseViewController.m in Sources */,
